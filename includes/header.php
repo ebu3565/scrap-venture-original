@@ -6,7 +6,8 @@
     <title><?php echo isset($pageTitle) ? $pageTitle : 'Scrap Venture - Eco-Friendly Recycling Service'; ?></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=<?=time()?>">
+ 
 </head>
 <body>
     <!-- Header -->
@@ -14,7 +15,7 @@
         <div class="container header-container">
             <a href="index.php" class="logo">
                 <img src="assets/logo.png" alt="Scrap Venture Logo">
-                <span class="logo-text">Scrap Venture</span>
+                
             </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">

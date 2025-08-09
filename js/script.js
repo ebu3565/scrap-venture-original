@@ -65,3 +65,15 @@ if (dateInput) {
 document.addEventListener('DOMContentLoaded', function() {
     // Any initialization code when DOM is fully loaded
 });
+
+
+
+//new added manual
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navMenu = document.getElementById('navMenu');
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('active');
+    });
+});

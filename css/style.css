@@ -11,6 +11,11 @@
     --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
+.step {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
 
 * {
     margin: 0;
@@ -46,7 +51,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 20px;
 }
 
 .logo {
@@ -56,7 +61,56 @@ header {
 }
 
 .logo img {
-    height: 50px;
+     height: 50px;
+    width: auto;
+}
+@media (max-width: 768px) {
+    .logo img {
+        height: 40px; /* Slightly smaller on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px 15px;
+    }
+    
+    .nav-menu {
+        top: 70px; /* Adjusted for smaller header */
+        padding: 15px;
+    }
+    
+    .nav-menu li {
+        margin: 8px 0;
+    }
+    
+    .nav-menu a {
+        padding: 8px 0;
+    }
+    
+    .nav-menu li:last-child a { /* Style the login button differently on mobile */
+        display: inline-block;
+        padding: 8px 15px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 35px; /* Even smaller for very small devices */
+    }
+    
+    .mobile-menu-btn {
+        font-size: 20px; /* Smaller hamburger icon */
+    }
+}
+
+/* 
+ */
+header {
+    z-index: 1000;
 }
 
 .logo-text {
